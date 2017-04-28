@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using NeuralNetworksLibrary;
 
 
 namespace Forex_Forecasting
@@ -458,6 +459,15 @@ namespace Forex_Forecasting
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            List<int> Layers = new List<int>{ 16, 8, 4, 2, 1 };
+            
+            NeuralNetwork_SelfAdjusting<Node_Linear, double> Forcaster = new NeuralNetwork_SelfAdjusting<Node_Linear, double>(Layers, 1);
+
+            Forcaster.RunNetwork();
         }
     }
 }
