@@ -14,7 +14,7 @@ using NeuralNetworksLibrary;
 
 namespace Forex_Forecasting
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         // Input data
         private List<DateTime> Date;
@@ -41,7 +41,7 @@ namespace Forex_Forecasting
         private static int GenerationsBetwenAveragingBest;
         private static int Amplitude;
 
-        public Form1()
+        public MainWindow()
         {
             // Windows form creation
             InitializeComponent();
