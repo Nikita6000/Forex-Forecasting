@@ -342,6 +342,8 @@ namespace Forex_Forecasting
 
     public class NeuralNetworkCore
     {
+        private List<Node<double>> Nodes = new List<Node<double>>();
+
 
     }
 }
